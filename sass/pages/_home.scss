@@ -1,0 +1,100 @@
+.cardContainer {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    .card {
+        box-sizing: border-box;
+        padding: 50px;
+        float: left;
+        width: 24.99999%;
+        img {
+          width: 100%;
+          height: auto;
+          &:hover {
+              zoom: 1;
+              filter: alpha(opacity=50);
+              opacity: 0.5;
+              -webkit-transition: opacity .5s ease-in-out;
+              -moz-transition: opacity .5s ease-in-out;
+              -ms-transition: opacity .5s ease-in-out;
+              -o-transition: opacity .5s ease-in-out;
+              transition: opacity .5s ease-in-out;
+          }
+        }
+        .sub {
+          padding: 15px;
+          text-align: center;
+        }
+        h4{
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            text-align: center;
+        }
+      }
+      
+      @media only screen and (max-width: 900px) {
+        .card {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 750px) {
+        .card {
+          width: 100%;
+        }
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+}
+
+.meet {   
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+
+    hr {
+        width: 2.5%;
+        height: 2.5px;
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;      
+        }
+    
+    .portrait{
+        box-sizing: border-box;
+        padding: 20px;
+        float: left;
+        width: 24.99999%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+        .name{
+            padding-top: 15px;
+            text-transform: uppercase;
+            
+        }
+        .job {
+            color: #7CD9C6;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .portrait {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 750px) {
+        .portrait {
+          width: 100%;
+        }
+      }
+}

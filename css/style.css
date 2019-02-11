@@ -1,0 +1,112 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.cardContainer {
+  background-color: whitesmoke;
+  width: 100%; }
+  .cardContainer .card {
+    box-sizing: border-box;
+    padding: 50px;
+    float: left;
+    width: 24.99999%; }
+    .cardContainer .card img {
+      width: 100%;
+      height: auto; }
+      .cardContainer .card img:hover {
+        zoom: 1;
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+        -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out; }
+    .cardContainer .card .sub {
+      padding: 15px;
+      text-align: center; }
+    .cardContainer .card h4 {
+      margin: 0;
+      padding: 0; }
+    .cardContainer .card p {
+      text-align: center; }
+  @media only screen and (max-width: 900px) {
+    .cardContainer .card {
+      width: 49.99999%;
+      margin: 6px 0; } }
+  @media only screen and (max-width: 750px) {
+    .cardContainer .card {
+      width: 100%; } }
+  .cardContainer .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.meet {
+  width: 100%;
+  text-align: center;
+  line-height: 25px; }
+  .meet hr {
+    width: 2.5%;
+    height: 2.5px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto; }
+  .meet .portrait {
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+    width: 24.99999%; }
+    .meet .portrait img {
+      width: 100%;
+      height: auto; }
+    .meet .portrait .name {
+      padding-top: 15px;
+      text-transform: uppercase; }
+    .meet .portrait .job {
+      color: #7CD9C6; }
+  @media only screen and (max-width: 900px) {
+    .meet .portrait {
+      width: 49.99999%;
+      margin: 6px 0; } }
+  @media only screen and (max-width: 750px) {
+    .meet .portrait {
+      width: 100%; } }
