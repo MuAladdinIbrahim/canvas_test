@@ -1,3 +1,18 @@
+#portfolio {
+  .portfolio-item {
+    position: relative;
+    overflow: hidden !important;
+    @include grid(4 ,0);
+    img {
+      width: 100%;
+    }
+    .portfolio-desc {
+      @include desc;
+    }
+  }
+}
+
+
 .cardContainer {
     background-color: rgb(245, 245, 245);
     width: 100%;
