@@ -131,39 +131,35 @@
             color: $cyan;
         }
         .social {
-          font-size: 1.5rem;
-          text-align: center;
-          margin-bottom: 10px;
-
           #fb , #tw , #g {
             background-color: $offwhite;
-            border-radius:50%; 
+            border-radius: 50%; 
             width: 40px;
             height: 40px;
+            font-size: 1.5rem;         
+            margin-bottom: 10px;
           }
               #fb{
                 &:hover {
                   transition-property: background-color;
-                background-color: blue;
+                background-color: rgb(40, 40, 230);
               }
             }
               #tw {
                 &:hover {
                   transition-property: background-color;
-                background-color: cyan;
+                background-color: rgb(52, 226, 226);
               } }
               #g {
                 &:hover {
                   transition-property: background-color;
-                background-color: red;
+                background-color: rgb(236, 43, 43);
               }
             
             }
         
          }
-       }
-   
-            
+       }      
             //   display: inline-block;
             //   margin: 1em;
             //   text-transform: uppercase;

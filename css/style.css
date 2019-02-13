@@ -178,24 +178,22 @@ table {
       text-transform: uppercase; }
     .meet .portrait .job {
       color: #7CD9C6; }
-    .meet .portrait .social {
+    .meet .portrait .social #fb, .meet .portrait .social #tw, .meet .portrait .social #g {
+      background-color: #ececec;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
       font-size: 1.5rem;
-      text-align: center;
       margin-bottom: 10px; }
-      .meet .portrait .social #fb, .meet .portrait .social #tw, .meet .portrait .social #g {
-        background-color: #ececec;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px; }
-      .meet .portrait .social #fb:hover {
-        transition-property: background-color;
-        background-color: blue; }
-      .meet .portrait .social #tw:hover {
-        transition-property: background-color;
-        background-color: cyan; }
-      .meet .portrait .social #g:hover {
-        transition-property: background-color;
-        background-color: red; }
+    .meet .portrait .social #fb:hover {
+      transition-property: background-color;
+      background-color: #2828e6; }
+    .meet .portrait .social #tw:hover {
+      transition-property: background-color;
+      background-color: #34e2e2; }
+    .meet .portrait .social #g:hover {
+      transition-property: background-color;
+      background-color: #ec2b2b; }
   @media only screen and (max-width: 900px) {
     .meet .portrait {
       width: 49.99999%;
