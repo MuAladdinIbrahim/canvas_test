@@ -40,9 +40,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+#rects .rect {
+  float: left;
+  width: 25%;
+  margin-right: 0;
+  margin-bottom: 0; }
+  #rects .rect:nth-child(4n) {
+    margin-right: 0; }
+  #rects .rect hr {
+    width: 2.5%;
+    height: 2.5px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto; }
+  #rects .rect .number, #rects .rect .icon, #rects .rect .lines {
+    text-align: center;
+    padding: 10px; }
+  #rects .rect .icon {
+    font-size: 2.5rem; }
+
 #portfolio .portfolio-item {
   position: relative;
   overflow: hidden !important;
+  transition: all .3s;
   float: left;
   width: 25%;
   margin-right: 0;
@@ -50,19 +70,26 @@ table {
   #portfolio .portfolio-item:nth-child(4n) {
     margin-right: 0; }
   #portfolio .portfolio-item img {
-    width: 100%; }
+    width: 100%;
+    position: relative; }
   #portfolio .portfolio-item .portfolio-desc {
+    position: absolute;
     display: block !important;
+    opacity: 0;
     width: 100%;
     height: 78px;
+    bottom: -78px;
     top: auto;
     left: 0;
     background-color: #fff;
-    box-sizing: border-box; }
-    #portfolio .portfolio-item .portfolio-desc:hover:after {
-      content: "";
-      position: absolute;
-      transition: bottom .2s ease-in-out; }
+    box-sizing: border-box;
+    border-bottom: 0;
+    padding: 15px;
+    z-index: 3;
+    overflow: hidden; }
+    #portfolio .portfolio-item .portfolio-desc:hover {
+      transition: bottom .2s ease-in-out;
+      opacity: 1; }
 
 .cardContainer {
   background-color: whitesmoke;
@@ -128,9 +155,9 @@ table {
     .meet .portrait .job {
       color: #7CD9C6; }
   @media only screen and (max-width: 900px) {
-    .meet .portrait {
+    .meet .card {
       width: 49.99999%;
       margin: 6px 0; } }
   @media only screen and (max-width: 750px) {
-    .meet .portrait {
+    .meet .card {
       width: 100%; } }

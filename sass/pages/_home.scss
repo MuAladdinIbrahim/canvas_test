@@ -1,17 +1,36 @@
-#portfolio {
-  .portfolio-item {
-    position: relative;
-    overflow: hidden !important;
-    @include grid(4 ,0);
-    img {
-      width: 100%;
+#rects{    
+  .rect{
+    @include grid(4,0);
+
+    hr{
+      @include hr;
     }
-    .portfolio-desc {
-      @include desc;
+    .number ,.icon , .lines {
+      text-align: center;
+      padding: 10px;
     }
+    .icon {
+      font-size: 2.5rem;
+    }
+
   }
 }
 
+
+#portfolio {
+  .portfolio-item {
+    @include item;
+    // overflow: hidden !important;
+    @include grid(4 ,0);
+    img {
+      width: 100%;
+      position: relative;
+    }
+    .portfolio-desc {
+      @include desc;     
+      }
+    }
+  }
 
 .cardContainer {
     background-color: rgb(245, 245, 245);
@@ -48,18 +67,7 @@
         }
       }
       
-      @media only screen and (max-width: 900px) {
-        .card {
-          width: 49.99999%;
-          margin: 6px 0;
-        }
-      }
-      
-      @media only screen and (max-width: 750px) {
-        .card {
-          width: 100%;
-        }
-      }
+@include media;
       
       .clearfix:after {
         content: "";
@@ -74,11 +82,7 @@
     line-height: 25px;
 
     hr {
-        width: 2.5%;
-        height: 2.5px;
-        background-color: black;
-        margin-left: auto;
-        margin-right: auto;      
+        @include hr;      
         }
     
     .portrait{
@@ -99,17 +103,5 @@
             color: #7CD9C6;
         }
     }
-
-    @media only screen and (max-width: 900px) {
-        .portrait {
-          width: 49.99999%;
-          margin: 6px 0;
-        }
-      }
-      
-      @media only screen and (max-width: 750px) {
-        .portrait {
-          width: 100%;
-        }
-      }
+@include media;
 }
