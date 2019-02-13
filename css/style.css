@@ -60,6 +60,11 @@ table {
     padding: 10px; }
   #rects .rect .icon {
     font-size: 2.5rem; }
+    #rects .rect .icon i {
+      opacity: 1; }
+      #rects .rect .icon i:hover {
+        transition: opacity .2s ease-in-out;
+        opacity: .5; }
 
 @media only screen and (max-width: 900px) {
   #rects .rect {
