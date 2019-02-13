@@ -41,7 +41,6 @@ table {
   border-spacing: 0; }
 
 #rects .rect {
-  margin-bottom: 50px;
   padding: 25px 0;
   float: left;
   width: 25%;
@@ -54,10 +53,12 @@ table {
     height: 2.5px;
     background-color: black;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    background-color: #ececec !important; }
   #rects .rect .number, #rects .rect .icon, #rects .rect .lines {
     text-align: center;
-    padding: 10px; }
+    padding: 10px;
+    color: #ececec; }
   #rects .rect .icon {
     font-size: 2.5rem; }
     #rects .rect .icon i {
@@ -115,7 +116,7 @@ table {
     width: 100%; } }
 
 .cardContainer {
-  background-color: whitesmoke;
+  background-color: #ececec;
   width: 100%; }
   .cardContainer .card {
     box-sizing: border-box;
@@ -177,6 +178,36 @@ table {
       text-transform: uppercase; }
     .meet .portrait .job {
       color: #7CD9C6; }
+    .meet .portrait .social {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 10px; }
+      .meet .portrait .social #fb, .meet .portrait .social #tw, .meet .portrait .social #g {
+        display: inline-block;
+        margin: 1em;
+        text-transform: uppercase;
+        padding: 1em 1.5em;
+        background: none;
+        color: darkblue;
+        font-weight: bold;
+        position: relative;
+        transition: color 0.25s ease;
+        border: 3px solid green; }
+        .meet .portrait .social #fb::after, .meet .portrait .social #tw::after, .meet .portrait .social #g::after {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background-color: green;
+          transform-origin: left;
+          transition: width 0.25s ease;
+          z-index: -1; }
+        .meet .portrait .social #fb:hover, .meet .portrait .social #tw:hover, .meet .portrait .social #g:hover {
+          color: red; }
+          .meet .portrait .social #fb:hover ::after, .meet .portrait .social #tw:hover ::after, .meet .portrait .social #g:hover ::after {
+            width: 100%; }
   @media only screen and (max-width: 900px) {
     .meet .portrait {
       width: 49.99999%;

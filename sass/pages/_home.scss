@@ -1,15 +1,16 @@
 #rects{    
   .rect{
-    margin-bottom: 50px;
     padding: 25px 0;
     @include grid(4,0);
 
     hr{
       @include hr;
+      background-color: $offwhite !important;
     }
     .number ,.icon , .lines {
       text-align: center;
       padding: 10px;
+      color: $offwhite;
     }
     .icon {
       font-size: 2.5rem;
@@ -33,7 +34,6 @@
     }
   }
 }
-
 #portfolio {
   .portfolio-item {
     @include item;
@@ -61,7 +61,7 @@
   
 
 .cardContainer {
-    background-color: rgb(245, 245, 245);
+    background-color: $offwhite;
     width: 100%;
     .card {
         box-sizing: border-box;
@@ -128,7 +128,24 @@
             
         }
         .job {
-            color: #7CD9C6;
+            color: $cyan;
+        }
+        .social {
+          font-size: 1.5rem;
+          text-align: center;
+          margin-bottom: 10px;
+
+          #fb , #tw , #g {
+            // background-color: $offwhite;
+            // border-radius:50%; 
+            // width: 40px;
+            // height: 40px;
+            // &:hover {
+            //   transition-property: background-color;
+            //   background-color: blue;
+            // }
+
+            
         }
     }
     @media only screen and (max-width: 900px) {
