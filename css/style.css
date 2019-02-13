@@ -41,6 +41,8 @@ table {
   border-spacing: 0; }
 
 #rects .rect {
+  margin-bottom: 50px;
+  padding: 25px 0;
   float: left;
   width: 25%;
   margin-right: 0;
@@ -58,6 +60,14 @@ table {
     padding: 10px; }
   #rects .rect .icon {
     font-size: 2.5rem; }
+
+@media only screen and (max-width: 900px) {
+  #rects .rect {
+    width: 49.99999%; } }
+
+@media only screen and (max-width: 750px) {
+  #rects .rect {
+    width: 100%; } }
 
 #portfolio .portfolio-item {
   position: relative;
@@ -90,6 +100,14 @@ table {
     #portfolio .portfolio-item .portfolio-desc:hover {
       transition: bottom .2s ease-in-out;
       opacity: 1; }
+
+@media only screen and (max-width: 900px) {
+  #portfolio .portfolio-item {
+    width: 49.99999%; } }
+
+@media only screen and (max-width: 750px) {
+  #portfolio .portfolio-item {
+    width: 100%; } }
 
 .cardContainer {
   background-color: whitesmoke;
@@ -155,9 +173,9 @@ table {
     .meet .portrait .job {
       color: #7CD9C6; }
   @media only screen and (max-width: 900px) {
-    .meet .card {
+    .meet .portrait {
       width: 49.99999%;
       margin: 6px 0; } }
   @media only screen and (max-width: 750px) {
-    .meet .card {
+    .meet .portrait {
       width: 100%; } }
