@@ -31,7 +31,6 @@
     }  
   
 @mixin item {
-    position: relative;
     overflow: hidden !important;
     transition: all .3s;    
 }
