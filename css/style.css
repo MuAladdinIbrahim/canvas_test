@@ -95,54 +95,54 @@ table {
       display: block; }
 
 /*W3school responsive header*/
-#rects {
+.rects {
   margin-top: 30vw; }
-  #rects .rect {
+  .rects .rect {
     padding: 25px 0;
     float: left;
     width: 25%;
     margin-right: 0;
     margin-bottom: 0; }
-    #rects .rect:nth-child(4n) {
+    .rects .rect:nth-child(4n) {
       margin-right: 0; }
-    #rects .rect hr {
+    .rects .rect hr {
       width: 2.5%;
       height: 2.5px;
       background-color: black;
       margin-left: auto;
       margin-right: auto;
       background-color: #ececec; }
-    #rects .rect .number, #rects .rect .icon, #rects .rect .lines {
+    .rects .rect .number, .rects .rect .icon, .rects .rect .lines {
       text-align: center;
       padding: 10px;
       color: #ececec; }
-    #rects .rect .icon {
+    .rects .rect .icon {
       font-size: 2.5rem; }
-      #rects .rect .icon i {
+      .rects .rect .icon i {
         opacity: 1; }
-        #rects .rect .icon i:hover {
+        .rects .rect .icon i:hover {
           transition: opacity .2s ease-in-out;
           opacity: .5; }
   @media only screen and (max-width: 900px) {
-    #rects .rect {
+    .rects .rect {
       width: 49.99999%; } }
   @media only screen and (max-width: 750px) {
-    #rects .rect {
+    .rects .rect {
       width: 100%; } }
 
-#portfolio .portfolio-item {
+.portfolio .portfolio-item {
   overflow: hidden !important;
   transition: all .3s;
   float: left;
   width: 25%;
   margin-right: 0;
   margin-bottom: 0; }
-  #portfolio .portfolio-item:nth-child(4n) {
+  .portfolio .portfolio-item:nth-child(4n) {
     margin-right: 0; }
-  #portfolio .portfolio-item img {
+  .portfolio .portfolio-item img {
     width: 100%;
     position: relative; }
-  #portfolio .portfolio-item .portfolio-desc {
+  .portfolio .portfolio-item .portfolio-desc {
     position: absolute;
     display: block !important;
     opacity: 0;
@@ -156,16 +156,16 @@ table {
     padding: 15px;
     z-index: 3;
     overflow: hidden; }
-    #portfolio .portfolio-item .portfolio-desc:hover {
+    .portfolio .portfolio-item .portfolio-desc:hover {
       transition: bottom .2s ease-in-out;
       opacity: 1; }
 
 @media only screen and (max-width: 900px) {
-  #portfolio .portfolio-item {
+  .portfolio .portfolio-item {
     width: 49.99999%; } }
 
 @media only screen and (max-width: 750px) {
-  #portfolio .portfolio-item {
+  .portfolio .portfolio-item {
     width: 100%; } }
 
 .cardContainer {

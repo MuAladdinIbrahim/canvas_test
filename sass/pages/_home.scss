@@ -60,6 +60,7 @@
         }
         &:hover .dropdown-content {
           display: block;
+
         }
       }
      
@@ -120,7 +121,7 @@
 //   }
 // }
 
-#rects{ 
+.rects{ 
   margin-top: 30vw;
   .rect{
     padding: 25px 0;
@@ -157,7 +158,7 @@
     }
   }
 }
-#portfolio {
+.portfolio {
   .portfolio-item {
     @include item;
     @include grid(4 ,0);
